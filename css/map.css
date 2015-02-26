@@ -1,0 +1,159 @@
+@media screen and (min-width: 981px) {
+.ui-tabs-hide {display:none;}
+
+.map-ukraine {width:933px; height:593px; position:relative; background:url(../img/map-ukraine.png) no-repeat; margin:0 auto; overflow: hidden;}
+.map-ukraine a {position:absolute; overflow:hidden; font-size:14px; color:#26a2da; text-decoration:underline;}
+.map-ukraine a:hover {text-decoration:none;}
+#map-ukraine1 area:hover {background:#000;}
+.map-ukraine-img {position:absolute; top:0; left:0; z-index:0}
+.map-ukraine-overlay {position:absolute; top:0; left:0; z-index:100}
+.map-ukraine .rh {position:absolute; overflow:hidden; font-size:14px; color:#26a2da; text-decoration:underline; display:none;}
+.map-ukraine .rl {z-index: 101;}
+
+.region1 {width:155px; height:130px; top:156px; left:354px; z-index:10; padding:53px 0 0 72px; background:url(../img/cherkassy.png) no-repeat;}
+.region2 {width:125px; height:150px; top:1px; left:399px; padding:70px 0 0 25px; background:url(../img/chernigov.png) no-repeat;}
+.region3 {width:127px; height:150px; top:259px; left:126px; padding:25px 0 0 2px; background:url(../img/chernovtsi.png) no-repeat;}
+.region4 {width:210px; height:135px; top:442px; left:497px; padding:47px 0 0 31px; background:url(../img/crimea.png) no-repeat;}
+.region5 {width:190px; height:130px; top:228px; left:516px; padding:37px 0 0 51px; background:url(../img/dnepr.png) no-repeat;}
+.region6 {width:120px; height:170px; top:214px; left:687px; padding:56px 0 0 28px; background:url(../img/donetsk.png) no-repeat;}
+.region7 {width:150px; height:150px; top:194px; left:68px; padding:27px 0 0 11px; background:url(../img/frankovsk.png) no-repeat;}
+.region8 {width:150px; height:150px; top:129px; left:596px; padding:50px 0 0 67px; background:url(../img/kharkov.png) no-repeat;}
+.region9 {width:175px; height:150px; top:345px; left:448px; padding:64px 0 0 77px; background:url(../img/kherson.png) no-repeat;}
+.region10 {width:150px; height:150px; top:128px; left:194px; padding:64px 0 0 5px; background:url(../img/khmeln.png) no-repeat;}
+.map-ukraine .region11 {width:150px; height:168px; top:66px; left:342px; z-index:9; font-size:18px; padding:78px 0 0 71px; background:url(../img/kiev.png) no-repeat;}
+.region12 {width:195px; height:150px; top:225px; left:361px; z-index:9; padding:47px 0 0 73px; background:url(../img/kirov.png) no-repeat;}
+.region13 {width:155px; height:154px; top:151px; left:740px; padding:44px 0 0 23px; background:url(../img/lugansk.png) no-repeat;}
+.region14 {width:150px; height:150px; top:22px; left:92px; padding:46px 0 0 45px; background:url(../img/lutsk.png) no-repeat;}
+.region15 {width:150px; height:150px; top:114px; left:33px; padding:41px 0 0 44px; background:url(../img/lvov.png) no-repeat;}
+.region16 {width:150px; height:150px; top:301px; left:383px; padding:60px 0 0 57px; background:url(../img/nikolaev.png) no-repeat;}
+.region17 {width:180px; height:220px; top:301px; left:280px; padding:90px 0 0 95px; background:url(../img/odessa.png) no-repeat;}
+.region18 {width:160px; height:150px; top:132px; left:470px; padding:45px 0 0 49px; background:url(../img/poltava.png) no-repeat;}
+.region19 {width:150px; height:150px; top:26px; left:148px; padding:45px 0 0 55px; background:url(../img/rovno.png) no-repeat;}
+.region20 {width:150px; height:170px; top:0px; left:507px; padding:100px 0 0 51px; background:url(../img/sumi.png) no-repeat;}
+.region21 {width:150px; height:150px; top:148px; left:127px; padding:27px 0 0; background:url(../img/ternopol.png) no-repeat;}
+.region22 {width:150px; height:150px; top:213px; left:0px; padding:49px 0 0 25px; background:url(../img/uzgorod.png) no-repeat;}
+.region23 {width:150px; height:150px; top:181px; left:248px; padding:70px 0 0 30px; background:url(../img/vinnytsa.png) no-repeat;}
+.region24 {width:150px; height:150px; top:300px; left:577px; padding:39px 0 0 39px; background:url(../img/zapor.png) no-repeat;}
+.region25 {width:150px; height:155px; top:51px; left:247px; padding:53px 0 0 21px; background:url(../img/zhitomir.png) no-repeat;}
+
+.rgn_lnk1 {top:209px; left:426px;}
+.rgn_lnk2 {top:71px; left:424px;}
+.rgn_lnk3 {top:284px; left:128px;}
+.rgn_lnk4 {top:489px; left:528px;}
+.rgn_lnk5 {top:265px; left:567px;}
+.rgn_lnk6 {top:270px; left:715px;}
+.rgn_lnk7 {top:224px; left:75px; width: 80px;}
+.rgn_lnk8 {top:179px; left:663px;}
+.rgn_lnk9 {top:409px; left:525px;}
+.rgn_lnk10 {top:192px; left:199px;}
+.map-ukraine .rgn_lnk11 {top:144px; left:413px; font-size:18px;}
+.rgn_lnk12 {top:272px; left:434px;}
+.rgn_lnk13 {top:195px; left:763px;}
+.rgn_lnk14 {top:68px; left:137px;}
+.rgn_lnk15 {top:155px; left:77px;}
+.rgn_lnk16 {top:361px; left:440px;}
+.rgn_lnk17 {top:391px; left:375px;}
+.rgn_lnk18 {top:177px; left:519px;}
+.rgn_lnk19 {top:71px; left:203px;}
+.rgn_lnk20 {top:100px; left:558px;}
+.rgn_lnk21 {top:205px; left:132px;}
+.rgn_lnk22 {top:262px; left:25px;}
+.rgn_lnk23 {top:251px; left:278px;}
+.rgn_lnk24 {top:339px; left:616px;}
+.rgn_lnk25 {top:104px; left:268px;}
+
+.map-ukraine h4 {font-size:14px; font-weight:normal; color:#ffe966; padding:4px 0 0 258px;}
+
+
+
+.popup-cities {position:absolute; top:0; left:0; width:154px; z-index:100500; display:none;}
+.popup-cities-top {height:6px; overflow:hidden; background:url(../img/popup-cities-top.png) no-repeat;}
+.popup-cities-bot {height:6px; overflow:hidden; background:url(../img/popup-cities-bot.png) no-repeat;}
+.popup-cities-mid {background:#e6faff; border-left:1px solid #ffcd66; border-right:1px solid #ffcd66;}
+.map-ukraine .popup-cities a {position:relative; color:#146197; text-decoration:underline; font-size:12px;}
+.popup-cities a:hover {text-decoration:none;}
+.popup-cities p {color:#737373;}
+.popup-cities li {background:url(../img/popup-cities-li.gif) no-repeat 0 14px; padding:8px 0 0 22px;}
+.popup-cities-mid {padding:7px 2px 8px 17px;}
+
+/* Map styles */
+.city-big {width:20px; height:20px; top:100px; left:100px; background:url(../img/map-dot-big.png) no-repeat;}
+.city-small {width:18px; height:18px; top:200px; left:200px; background:url(../img/map-dot-mid.png) no-repeat;}
+/* Map preloader */
+.map_preloader {
+    /* Images you want to preload*/
+    width: 0px;
+    height: 0px;
+    display: inline;
+}
+}
+
+@media screen and (max-width: 980px) {
+
+.map-ukraine { overflow:hidden; width:700px; height:473px; position:relative; background:url(../img-copy/map-ukraine.png) no-repeat; margin:17px 0 0 27px;}
+.map-ukraine a {position:absolute; overflow:hidden; font-size: 12px; color:#26a2da; text-decoration:underline;}
+.map-ukraine a:hover {overflow:hidden; text-decoration:none;}
+#map-ukraine1 area:hover {overflow:hidden; background:#000;}
+.map-ukraine-img {position:absolute; top:0; left:0; z-index:0}
+.map-ukraine-overlay {overflow:hidden; position:absolute; top:0px; left:999px; z-index:100}
+.map-ukraine .rh {position:absolute; overflow:hidden; font-size:10px; color:#26a2da; text-decoration:underline; display:none;}
+.map-ukraine .rl {z-index: 101; overflow:hidden;}
+
+.region1 {position:absolute; width:135px; height:140px; top:125px; left:283px; z-index:10; padding:3px 0 0 2px; background:url(../img-copy/cherkassy.png) no-repeat;}
+.region2 {position:absolute; width:100px; height:120px; top:1px; left:319px; padding:10px 0 0 5px; background:url(../img-copy/chernigov.png) no-repeat;}
+.region3 {position:absolute; width:107px; height:140px; top:208px; left:100px; padding:25px 0 0 2px; background:url(../img-copy/chernovtsi.png) no-repeat;}
+.region4 {position:absolute; width:190px; height:145px; top:353px; left:397px; padding:47px 0 0 31px; background:url(../img-copy/crimea.png) no-repeat;}
+.region5 {position:absolute; width:170px; height:120px; top:182px; left:413px; padding:37px 0 0 51px; background:url(../img-copy/dnepr.png) no-repeat;}
+.region6 {position:absolute; width:100px; height:160px; top:171px; left:549px; padding:56px 0 0 28px; background:url(../img-copy/donetsk.png) no-repeat;}
+.region7 {position:absolute; width:130px; height:140px; top:155px; left:55px; padding:27px 0 0 11px; background:url(../img-copy/frankovsk.png) no-repeat;}
+.region8 {position:absolute; width:140px; height:140px; top:103px; left:476px; padding:50px 0 0 67px; background:url(../img-copy/kharkov.png) no-repeat;}
+.region9 {position:absolute; width:165px; height:140px; top:277px; left:359px; padding:64px 0 0 77px; background:url(../img-copy/kherson.png) no-repeat;}
+.region10 {position:absolute; width:140px; height:140px; top:103px; left:155px; padding:64px 0 0 5px; background:url(../img-copy/khmeln.png) no-repeat;}
+.map-ukraine .region11 {position:absolute; width:130px; height:168px; top:53px; left:274px; z-index:9; font-size:18px; padding:78px 0 0 71px; background:url(../img-copy/kiev.png) no-repeat;}
+.region12 {position:absolute; width:185px; height:140px; top:180px; left:288px; z-index:9; padding:47px 0 0 73px; background:url(../img-copy/kirov.png) no-repeat;}
+.region13 {position:absolute; width:115px; height:144px; top:121px; left:591px; padding:44px 0 0 3px; background:url(../img-copy/lugansk.png) no-repeat;}
+.region14 {position:absolute; width:140px; height:140px; top:18px; left:73px; padding:46px 0 0 45px; background:url(../img-copy/lutsk.png) no-repeat;}
+.region15 {position:absolute; width:140px; height:140px; top:91px; left:26px; padding:41px 0 0 44px; background:url(../img-copy/lvov.png) no-repeat;}
+.region16 {position:absolute; width:140px; height:140px; top:240px; left:306px; padding:60px 0 0 57px; background:url(../img-copy/nikolaev.png) no-repeat;}
+.region17 {position:absolute; width:170px; height:210px; top:241px; left:224px; padding:90px 0 0 95px; background:url(../img-copy/odessa.png) no-repeat;}
+.region18 {position:absolute; width:150px; height:140px; top:106px; left:376px; padding:45px 0 0 49px; background:url(../img-copy/poltava.png) no-repeat;}
+.region19 {position:absolute; width:140px; height:140px; top:21px; left:119px; padding:45px 0 0 55px; background:url(../img-copy/rovno.png) no-repeat;}
+.region20 {position:absolute; width:140px; height:160px; top:0px; left:406px; padding:100px 0 0 51px; background:url(../img-copy/sumi.png) no-repeat;}
+.region21 {position:absolute; width:140px; height:140px; top:118px; left:102px; padding:27px 0 0; background:url(../img-copy/ternopol.png) no-repeat;}
+.region22 {position:absolute; width:140px; height:140px; top:171px; left:-1px; padding:49px 0 0 25px; background:url(../img-copy/uzgorod.png) no-repeat;}
+.region23 {position:absolute; width:140px; height:140px; top:145px; left:199px; padding:70px 0 0 30px; background:url(../img-copy/vinnytsa.png) no-repeat;}
+.region24 {position:absolute; width:140px; height:140px; top:240px; left:461px; padding:39px 0 0 39px; background:url(../img-copy/zapor.png) no-repeat;}
+.region25 {position:absolute; width:140px; height:145px; top:41px; left:197px; padding:53px 0 0 21px; background:url(../img-copy/zhitomir.png) no-repeat;}
+
+.rgn_lnk1 {position:absolute; top:168px; left:335px;}
+.rgn_lnk2 {position:absolute; top:53px; left:340px;}
+.rgn_lnk3 {position:absolute; top:224px; left:108px;}
+.rgn_lnk4 {position:absolute; top:389px; left:428px;}
+.rgn_lnk5 {position:absolute; top:215px; left:447px;}
+.rgn_lnk6 {position:absolute; top:240px; left:575px;}
+.rgn_lnk7 {position:absolute; top:178px; left:60px;}
+.rgn_lnk8 {position:absolute; top:144px; left:523px;}
+.rgn_lnk9 {position:absolute; top:325px; left:425px;}
+.rgn_lnk10 {position:absolute; top:155px; left:160px;}
+.map-ukraine .rgn_lnk11 {position:absolute; top:111px; left:330px; font-size:16px;}
+.rgn_lnk12 {position:absolute; top:218px; left:334px;}
+.rgn_lnk13 {position:absolute; top:152px; left:603px;}
+.rgn_lnk14 {position:absolute; top:50px; left:100px;}
+.rgn_lnk15 {position:absolute; top:130px; left:40px;}
+.rgn_lnk16 {position:absolute; top:280px; left:350px;}
+.rgn_lnk17 {position:absolute; top:305px; left:290px;}
+.rgn_lnk18 {position:absolute; top:140px; left:415px;}
+.rgn_lnk19 {position:absolute; top:51px; left:163px;}
+.rgn_lnk20 {position:absolute; top:70px; left:430px;}
+.rgn_lnk21 {position:absolute; top:167px; left:108px;}
+.rgn_lnk22 {position:absolute; top:210px; left:20px;}
+.rgn_lnk23 {position:absolute; top:205px; left:220px;}
+.rgn_lnk24 {position:absolute; top:275px; left:500px;}
+.rgn_lnk25 {position:absolute; top:80px; left:220px;}
+
+
+
+
+
+
+
