@@ -513,7 +513,7 @@ nav.on a:active{
 /*---------------------------------------------------------------------------------*/	
 /*---------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------*/
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 745px){
 h2{
 	font-size: 20px;
 }
@@ -567,7 +567,6 @@ nav.on a:hover{
 }
 .city-list h2{
 	margin-top: 100px;
-}
 }
 .city-for-mobile{
 	text-align: center;
@@ -652,7 +651,11 @@ nav.on a:hover{
 	float: none;
 	margin: 0 auto;
 }
+.feedback h3{
+	text-align: center;
+}
 .footer-nav{
 	text-align: center;
 }
 }
+
