@@ -1,6 +1,8 @@
+
 /*----------------------------------------------------------------------------------*/
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 html,body                       { width:100%; height:100%; }
 body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
@@ -15,7 +17,7 @@ textarea                       { vertical-align:top; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:12px; color:#000; text-decoration:none; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -50,7 +52,7 @@ a:hover                        { text-decoration:none; }
 
 }
 
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
 
 
 .row{
@@ -82,15 +84,14 @@ h3{
 	font-size: 20px;
 	font-weight: 300;
 }
-.title-line{
+
+.section-rev{
 	text-align: center;
-	margin-bottom: 20px;
-}
-.title-line span{
-	display: inline-block;
-	width: 45%;
-	height: 2px;
-	background: none repeat scroll 0% 0% #5B5B5B;
+	margin: 40px 100px 30px 100px;
+	color: #16455F;
+	font-size: 16px;
+	font-family: 'PT Sans', sans-serif;
+
 }
 /*-----------------------------------social box-------------------------------------*/
 .social{
@@ -103,7 +104,6 @@ h3{
 	top: 240px;
 	width: 50px;
 	height: 145px;
-	background: #4b6662;
 	box-sizing: border-box;
 }
 
@@ -131,9 +131,70 @@ h3{
 	background-repeat: no-repeat;
 	background-position: 7px 5px;
 }
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+#mail-modal{
+  display: none;
+   position: absolute;
+   right: 5px;
+   top: 342px;
+}
+.sign-up {
+  font-size:14px;
+}
+.sign-up {
+  padding: 30px;
+  background-color: #174560;
+  border: 1px solid #fff;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+}
+.sign-up input::-webkit-input-placeholder {
+  font-size:12px;
+}
+
+.sign-up input[type='text'] {
+  width:220px;
+  height:30px;
+  border:none;
+  padding:5px;
+  margin: 0 0 5px 0;
+}
+
+.sign-up input[type='email'] {
+  width:220px;
+  height:30px;
+  border:none;
+  padding:5px;
+  margin: 0 0 5px 0;
+}
+
+.sign-up input[type='submit'] {
+  width:220px;
+  height:40px;
+  border: none;
+  font-size:14px;
+  background-color:#FFF;
+  padding:5px;
+  margin: 0 0 5px 0;
+  color: #174560;
+  text-transform: uppercase;
+}
+.sign-up input[type='submit']:hover{
+  background-color: #00BFFF;
+}
 /*-------------------------------------HEADER---------------------------------------*/
 .header{
-	background-color: #45706f;
+	background-color: #15455E;
 	position:fixed; 
 	width:100%;
 	top:0; 
@@ -292,101 +353,524 @@ nav.on a:active{
 .main-screen .screen{
 	text-align: center;
 }
-.screen img{
-	margin-top: 50px;
-	margin: 130px 0px 40px 0px;
-}
 .screen h3{
 	font-family: 'adam.cg_proregular';
 	color:#fff;
 	font-size: 64px;
-	margin-bottom: 390px;
+	margin: 210px 0px 390px 0px;
 	text-transform: uppercase;
 }
 /*-------------------------------------MAP------------------------------------------*/
-.map{
-	margin-bottom: 30px;
-}
 .city-list{
-	display: none;
+  display: none;
+}
+.map{
+	width: 1089px;
+	height: 705px;
+	margin-bottom: 10px;
+	background-image: url(../images/map.png);
+	background-repeat: no-repeat;
+}
+.map .sity{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.map .sity-link{
+	margin: 10px 0px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+}
+.map .event-rev{
+	margin: 5px 10px;
+	padding-top: 5px;
+	border-top: 1px solid #557A9C;
+}
+.map .event-date{
+	font-weight: 600;
+}
+.ivanofrank, .ujgorod, .lviv, .ternopil, .lutck, .rivne, .jitomir, .chernigiv, .summi, .harkov, .poltava, 
+.dnipropetr, .zaporoj, .herson, .nikolaev, .odessa, .kirovograd, .cherkasy, .kiev, .vinnica, 
+.hmelnickij, .chernovcy{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+.ivanofrank{
+	top: 420px;
+	left: 175px;
+}
+.ujgorod{
+	top: 465px;
+	left: 70px;
+}
+.lviv{
+	top: 345px;
+	left: 145px;
+}
+.ternopil{
+	top: 374px;
+	left: 215px;
+}
+.lutck{
+	top: 274px;
+	left: 215px;
+}
+.rivne{
+	top: 289px;
+	left: 265px;
+}
+.jitomir{
+	top: 325px;
+	left: 395px;
+}
+.chernigiv{
+	top: 220px;
+	left: 535px;
+}
+.summi{
+	top: 265px;
+	left: 725px;
+}
+.harkov{
+	top: 339px;
+	left: 805px;
+}
+.poltava{
+	top: 378px;
+	left: 715px;
+}
+.dnipropetr{
+	top: 472px;
+	left: 745px;
+}
+.zaporoj{
+	top: 515px;
+	left: 755px;
+}
+.herson{
+	top: 624px;
+	left: 620px;
+}
+.nikolaev{
+	top: 600px;
+	left: 580px;
+}
+.odessa{
+	top: 640px;
+	left: 506px;
+}
+.kirovograd{
+	top: 455px;
+	left: 630px;
+}
+.cherkasy{
+	top: 395px;
+	left: 585px;
+}
+.kiev{
+	top: 312px;
+	left: 500px;
+}
+.vinnica{
+	top: 405px;
+	left: 380px;
+}
+.hmelnickij{
+	top: 390px;
+	left: 315px;
+}
+.chernovcy{
+	top: 470px;
+	left: 255px;
+}
+
+
+.ivanofrank-event, .ujgorod-event, .lviv-event, .ternopil-event, .lutck-event, .rivne-event, .jitomir-event, .chernigiv-event, .summi-event, .harkov-event, .poltava-event, 
+.dnipropetr-event, .zaporoj-event, .herson-event, .nikolaev-event, .odessa-event, .kirovograd-event, .cherkasy-event, .kiev-event, .vinnica-event, 
+.hmelnickij-event, .chernovcy-event {
+  display: none;
+ }
+.ivanofrank:hover .ivanofrank-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 999;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.ujgorod:hover .ujgorod-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.lviv:hover .lviv-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.ternopil:hover .ternopil-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.lutck:hover .lutck-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.rivne:hover .rivne-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.jitomir:hover .jitomir-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.chernigiv:hover .chernigiv-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.summi:hover .summi-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.harkov:hover .harkov-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.poltava:hover .poltava-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.dnipropetr:hover .dnipropetr-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.zaporoj:hover .zaporoj-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.herson:hover .herson-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.nikolaev:hover .nikolaev-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.odessa:hover .odessa-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.kirovograd:hover .kirovograd-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.cherkasy:hover .cherkasy-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.kiev:hover .kiev-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.vinnica:hover .vinnica-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.hmelnickij:hover .hmelnickij-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
+}
+.chernovcy:hover .chernovcy-event {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 200px; 
+  height: 110px; 
+  border:1px solid #145edd;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #557A9C;
 }
 /*-------------------------------------NEWS-----------------------------------------*/
+.news{
+	padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin: 20px 0px 10px 0px;
+}
 .last-news{
-	margin: 20px 0px 40px 0px;
+	padding-left: 0px !important;
+    padding-right: 0px !important;
 }
-.last-news .news-block{
-	height: 320px;
-
+.news-block{
+    float: left;
+    display: inline-block;
+    max-width: 650px;
+    height: 320px;
+    overflow: hidden;
 }
-.last-news .first{
-	background-color: #2e575d;
+.news-preview h3{
+	margin: 70px 0px 30px 0px;
+	text-align: center;
 }
-.last-news .second{
-	background-color: #fff;
-}
-.last-news .third{
-	background-color: #5f9892;
-}
-.news-preview-first, .news-preview-third, .news-preview-second{
-	padding: 8% 5% 0% 5%;
-}
-.last-news h3{
-	margin: 0px 0px 30px 15px;
-}
-.last-news p{
-	font-family: 'PT Sans', sans-serif;
+.news-preview p{
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 12px;
 	margin-bottom: 30px;
+	padding: 5px 75px;
 }
 .read-more{
 	text-align: center;
 }
-.last-news a{
+.news-block .news-preview a{
 	text-align: center;
 	padding: 5px 20px;
-	border: 1px solid;
+	border: 1px solid #fff;
 	text-decoration: none;
 	text-transform: uppercase;
+	color: #fff;
 }
-.news-picture{
-	width: 50%;
-	height: 100%;
-	display: inline-block;
-}
-.news-picture img{
+.news-block img{
 	width: 100%;
-	height: 100%;
 }
-.news-preview-first, .news-preview-third{
-	width: 50%;
-	height: 100%;
-	display: inline-block;
-	float: right;
-	color: #fff;
+.news-block .news-preview{
+	position: absolute;
+	top: 0px;
+	left: 0px; 
 }
-.news-preview-third{
-	clear: both;
-}
-.last-news .news-preview-first a{
-	border: 1px solid #fff;
-	color: #fff;
-}
-.last-news .news-preview-third a{
-	border: 1px solid #fff;
-	color: #fff;
-}
-.last-news a:hover {
+.news-block .news-preview a:hover {
   border-color: #1bdce3;
   color: #1bdce3;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+  -o-transition: ease-out 0.5s;
   transition: ease-out 0.5s;
 }
-.news-preview-second{
-	width: 50%;
-	height: 100%;
-	display: block;
-	float: left;
+.news-preview{
+	color: #fff;
+	background-color: rgba(28, 73, 98, 0.9);
+    max-width: 650px;
+    height: 100%;
+	opacity: 0;
 }
-
+.news-block .news-preview:hover{
+	opacity: 0.9;
+	-webkit-transition: ease-out 0.5s;
+  	-moz-transition: ease-out 0.5s;
+  	-o-transition: ease-out 0.5s;
+  	transition: ease-out 0.5s;
+}
 /*--------------------------------------TEAM----------------------------------------*/
 .team-membar{
 	padding-left: 0px !important;
@@ -401,8 +885,16 @@ nav.on a:active{
 	position: absolute;
 	bottom: 15px;
 	left: 15px;
-	background-color: #2f575d;
-	border-left: 4px solid #528582;
+	background-color: #15455E;
+	border-left: 4px solid #4D6783;
+}
+.team-regal:hover{
+	border-left: 4px solid #2D88EB;
+	background-color: #155475;
+	-webkit-transition: ease-out 0.5s;
+  	-moz-transition: ease-out 0.5s;
+  	-o-transition: ease-out 0.5s;
+  	transition: ease-out 0.5s;
 }
 .team-regal span{
 	display: block;
@@ -411,29 +903,29 @@ nav.on a:active{
 }
 .first-name{
 	color: #fff;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 12px;
 }
 .last-name{
 	color: #fff;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 14px;
 }
 .position{
-	color: #609892;
-	font-family: 'PT Sans', sans-serif;
+	color: #fff;
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 14px;
 	padding-bottom: 5px;
 }
 /*-------------------------------------FOOTER---------------------------------------*/
 .footer{
-	background-color: #2e5558;
+	background-color: #15455E;
 	overflow: hidden;
 }
 .footer-nav{
 	margin-right: 10px;
 	text-transform: uppercase;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 16px;
 	margin-top: 20px;
 }
@@ -449,8 +941,7 @@ nav.on a:active{
 }
 
 .footer h3{
-	
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 16px;
 	color: #fff;
 	text-transform: uppercase;
@@ -495,24 +986,515 @@ nav.on a:active{
 	color: #fff;
 }
 /*--------------------------------page places--------------------------------------*/
-.places-map .places{
-	margin-top: 100px;
+
+.places-title{
+  margin: 90px 0px 25px 0px;
+   color: #174560;
+   font-size: 40px;
 }
-.title-line-places{
-	text-align: center;
-	margin-bottom: 30px;
+.places .section-rev{
+  margin: 80px 0px;
 }
-.title-line-places span{
-	display: inline-block;
-	width: 50%;
-	height: 2px;
-	background: none repeat scroll 0% 0% #5B5B5B;
-	margin-bottom: 50px;
+.places .ivanofrank{
+  top: 285px;
+  left: 175px;
+}
+.places .ujgorod{
+  top: 330px;
+  left: 70px;
+}
+.places .lviv{
+  top: 210px;
+  left: 145px;
+}
+.places .ternopil{
+  top: 243px;
+  left: 215px;
+}
+.places .lutck{
+  top: 139px;
+  left: 215px;
+}
+.places .rivne{
+  top: 154px;
+  left: 265px;
+}
+.places .jitomir{
+  top: 190px;
+  left: 395px;
+}
+.places .chernigiv{
+  top: 85px;
+  left: 535px;
+}
+.places .summi{
+  top: 130px;
+  left: 725px;
+}
+.places .harkov{
+  top: 204px;
+  left: 805px;
+}
+.places .poltava{
+  top: 238px;
+  left: 715px;
+}
+.places .dnipropetr{
+  top: 337px;
+  left: 745px;
+}
+.places .zaporoj{
+  top: 380px;
+  left: 755px;
+}
+.places .herson{
+  top: 489px;
+  left: 620px;
+}
+.places .nikolaev{
+  top: 465px;
+  left: 580px;
+}
+.places .odessa{
+  top: 505px;
+  left: 506px;
+}
+.places .kirovograd{
+  top: 320px;
+  left: 630px;
+}
+.places .cherkasy{
+  top: 260px;
+  left: 585px;
+}
+.places .kiev{
+  top: 177px;
+  left: 500px;
+}
+.places .vinnica{
+  top: 270px;
+  left: 380px;
+}
+.places .hmelnickij{
+  top: 255px;
+  left: 315px;
+}
+.places .chernovcy{
+  top: 335px;
+  left: 255px;
+}
+/*-----------------------------------page-team------------------------------------*/	
+.page-team h2{
+	margin: 120px 0px 30px 0px;
+  color: #174560;
+  font-size: 40px;
+}
+.team-membars{
+	max-width: 1024px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.team-membars li{
+	height: 435px;
+	border-left: 10px solid #174560;
+	margin-bottom: 10px;
+	overflow: hidden;
+	color: #222222;
+}
+.team-membars li img{
+	height: 100%;
+}
+.team-membars li:nth-child(odd){
+	background-color: #DCE3E7;
+	display: block;
+	clear: both;
+}
+.team-membars li:nth-child(odd) img{
+	float: left;
+}
+.team-membars li:nth-child(even){
+	background-color: #EDF0F3;
+	display: block;
+	overflow: hidden;
+}
+.team-membars li:nth-child(even) img{
+	float: right;
+}
+.team-membars-regal {
+	margin: 20px 0px 0px 0px;
+	padding-left: 30px;
+	overflow: hidden;
+}
+.team-membars-regal .membar-story{
+	margin-top: 15px;
+}
+.membar-story p{
+	padding-right: 80px;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 14px;
+}
+.team-membars-regal span{
+	display: block;
+	margin-left: 3px;
+	padding-right: 35px;
+}
+.team-membars-regal .first-name{
+	color: #222222;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 12px;
+}
+.team-membars-regal .last-name{
+	color: #222222;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 14px;
+}
+.team-membars-regal .position{
+	color: #18445F;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid #18445F;
+	padding-bottom: 1px;
+  padding-right: 0px;
+  display: inline-block
+}
+/*-------------------------------------Page about us-------------------------*/
+.about-us {
+  margin: 40px 0px 90px 0px;
+}
+.about-us h2{
+  color: #174560;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.about-us .preview{
+height: 320px;
+}
+.about-us h3{
+  margin: 0px 0px 30px 15px;
+}
+.about-us p{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.about-us .r-more{
+  text-align: center;
+}
+.nw-block {
+  margin-top: 15px;
+}
+.about-us a{
+  text-align: center;
+  padding: 5px 20px;
+  border: 1px solid;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.thumb-img{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+.thumb-img img{
+  width: 100%;
+  height: 100%;
+}
+.text-preview{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  float: right;
+  color: #0F0F1E;
+  background-color: #EDF0F2;
+}
+.text-preview h3{
+  margin: 70px 0px 30px 0px;
+  text-align: center;
+}
+.text-preview p{
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 12px;
+  margin-bottom: 30px;
+  padding: 5px 75px;
+  max-height: 95px;
+  overflow: hidden;
+}
+.about-us .text-preview a{
+  border: 1px solid #0F0F1E;
+  color: #0F0F1E;
+}
+.about-us a:hover {
+  border-color: #557EC6;
+  color: #557EC6;
+  transition: ease-out 0.5s;
+}
+/*---------------------------------post-------------------------------------*/
+.post-title{
+  font-family: 'adam.cg_proregular';
+  color:#fff;
+  font-size: 64px;
+  margin: 210px 0px 390px 0px;
+  text-transform: uppercase;
+}
+.post{
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.post p{
+  color: #17455F;
+  font-size: 20px;
+}
+.post hr{
+  width: 50%;
+  color: #C5D0D7;
+  height: 30px;
+  margin-top: 45px;
+}
+/*---------------------------------media-------------------------------------*/
+@media screen and (max-width: 1200px){
+.map{
+	margin: 0 auto;
+	width: 772px;
+	height: 571px;
+	margin-bottom: 10px;
+	background-image: url(../images/map-small.png);
+	background-repeat: no-repeat;
+}
+	.ivanofrank{
+	top: 350px;
+	left: 210px;
+}
+.ujgorod{
+	top: 385px;
+	left: 140px;
+}
+.lviv{
+	top: 295px;
+	left: 195px;
+}
+.ternopil{
+	top: 314px;
+	left: 245px;
+}
+.lutck{
+	top: 244px;
+	left: 250px;
+}
+.rivne{
+	top: 255px;
+	left: 285px;
+}
+.jitomir{
+	top: 280px;
+	left: 375px;
+}
+.chernigiv{
+	top: 205px;
+	left: 475px;
+}
+.summi{
+	top: 240px;
+	left: 605px;
+}
+.harkov{
+	top: 290px;
+	left: 670px;
+}
+.poltava{
+	top: 315px;
+	left: 605px;
+}
+.dnipropetr{
+	top: 382px;
+	left: 620px;
+}
+.zaporoj{
+	top: 415px;
+	left: 635px;
+}
+.herson{
+	top: 497px;
+	left: 536px;
+}
+.nikolaev{
+	top: 485px;
+	left: 505px;
+}
+.odessa{
+	top: 505px;
+	left: 450px;
+}
+.kirovograd{
+	top: 370px;
+	left: 540px;
+}
+.cherkasy{
+	top: 330px;
+	left: 505px;
+}
+.kiev{
+	top: 272px;
+	left: 445px;
+}
+.vinnica{
+	top: 340px;
+	left: 370px;
+}
+.hmelnickij{
+	top: 330px;
+	left: 315px;
+}
+.chernovcy{
+	top: 385px;
+	left: 275px;
 }
 
-/*---------------------------------------------------------------------------------*/	
-/*---------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------*/
+.places .ivanofrank{
+  top: 215px;
+  left: 215px;
+}
+.places .ujgorod{
+  top: 247px;
+  left: 143px;
+}
+.places .lviv{
+  top: 155px;
+  left: 195px;
+}
+.places .ternopil{
+  top: 179px;
+  left: 245px;
+}
+.places .lutck{
+  top: 109px;
+  left: 250px;
+}
+.places .rivne{
+  top: 120px;
+  left: 285px;
+}
+.places .jitomir{
+  top: 145px;
+  left: 375px;
+}
+.places .chernigiv{
+  top: 60px;
+  left: 475px;
+}
+.places .summi{
+  top: 95px;
+  left: 605px;
+}
+.places .harkov{
+  top: 155px;
+  left: 670px;
+}
+.places .poltava{
+  top: 180px;
+  left: 605px;
+}
+.places .dnipropetr{
+  top: 247px;
+  left: 620px;
+}
+.places .zaporoj{
+  top: 275px;
+  left: 635px;
+}
+.places .herson{
+  top: 357px;
+  left: 536px;
+}
+.places .nikolaev{
+  top: 345px;
+  left: 505px;
+}
+.places .odessa{
+  top: 405px;
+  left: 450px;
+}
+.places .kirovograd{
+  top: 235px;
+  left: 540px;
+}
+.places .cherkasy{
+  top: 195px;
+  left: 505px;
+}
+.places .kiev{
+  top: 132px;
+  left: 448px;
+}
+.places .vinnica{
+  top: 205px;
+  left: 370px;
+}
+.places .hmelnickij{
+  top: 190px;
+  left: 315px;
+}
+.places .chernovcy{
+  top: 255px;
+  left: 275px;
+}
+
+
+}
+@media screen and (max-width: 992px){
+.ivanofrank, .ujgorod, .lviv, .ternopil, .lutck, .rivne, .jitomir, .chernigiv, .summi, .harkov, .poltava, 
+.dnipropetr, .zaporoj, .herson, .nikolaev, .odessa, .kirovograd, .cherkasy, .kiev, .vinnica, 
+.hmelnickij, .chernovcy{
+	display: none;
+}
+}
+@media screen and (max-width: 948px){
+	.map{
+	margin: 0 auto;
+	width: 462px;
+	height: 301px;
+	margin-bottom: 10px;
+	background-image: url(../images/map-smaller.png);
+	background-repeat: no-repeat;
+}
+.ivanofrank, .ujgorod, .lviv, .ternopil, .lutck, .rivne, .jitomir, .chernigiv, .summi, .harkov, .poltava, 
+.dnipropetr, .zaporoj, .herson, .nikolaev, .odessa, .kirovograd, .cherkasy, .kiev, .vinnica, 
+.hmelnickij, .chernovcy{
+	display: none;
+}
+}
+
+@media screen and (max-width: 767px){
+  .about-us .preview{
+  height: 300px;
+}
+  .thumb-img{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.thumb-img img{
+  width: 100%;
+  height: 100%;
+}
+.text-preview{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  float: right;
+  color: #0F0F1E;
+  background-color: #EDF0F2;
+}
+.text-preview p{
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 12px;
+  margin-bottom: 30px;
+  padding: 5px 75px;
+  max-height: 95px;
+  overflow: hidden;
+}
+}
+
 @media screen and (max-width: 745px){
 h2{
 	font-size: 20px;
@@ -522,7 +1504,7 @@ h2{
 }
 nav{
 	float: left;
-	background-color: #45706f;
+	background-color: #15455E;
     height: 100%;
 }
 nav a {
@@ -535,7 +1517,7 @@ nav.on{
 	padding-bottom: 20px;
 	display: block;
 	position: relative;
-	background-color: #45706f;
+	background-color: #133f55;
 	width: 100%;	
 	 -webkit-transition: all 500ms ease 300s;
 	 -moz-transition: all 500ms ease 300s;
@@ -548,13 +1530,13 @@ nav.on a {
 		  padding: 3px 0px;
 		  -webkit-animation-name: fadeInDown;
           animation-name: fadeInDown;
-  		-webkit-animation-fill-mode: forwards;
+  		  -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
           color: #fff;
           text-decoration: none;
 }
 nav.on a:hover{
-  background-color: #7eb4a2;
+  background-color: #15455E;
 }
 .button-wrap{
 	display: block;
@@ -582,29 +1564,16 @@ nav.on a:hover{
 	color: #0085B2;
 }
 .last-news{
-	margin: 20px 0px 40px 0px;
+	margin: 0px 0px 10px 0px;
 }
 .last-news .news-block{
 	height: 100%;
-
-}
-.last-news .first{
-	background-color: #2e575d;
-}
-.last-news .second{
-	background-color: #CFE0EE;
-}
-.last-news .third{
-	background-color: #5f9892;
-}
-.news-preview-first, .news-preview-third, .news-preview-second{
-	padding: 10% 5% 0% 5%;
 }
 .last-news h3{
 	margin-bottom: 20px;
 }
 .last-news p{
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 12px;
 	margin-bottom: 20px;
 }
@@ -616,36 +1585,6 @@ nav.on a:hover{
 .news-picture img{
 	width: 100%;
 	height: 100%;
-}
-.news-preview-first, .news-preview-third{
-	width: 100%;
-	height: 100%;
-	display: block;
-	float: right;
-	color: #fff;
-	margin-bottom: 15px;
-}
-.news-preview-third{
-	clear: both;
-}
-.last-news .news-preview-first a{
-	border: 1px solid #fff;
-	color: #fff;
-}
-.last-news .news-preview-third a{
-	border: 1px solid #fff;
-	color: #fff;
-}
-.last-news a:hover {
-  border-color: #1bdce3;
-  color: #1bdce3;
-  transition: ease-out 0.5s;
-}
-.news-preview-second{
-	margin-bottom: 15px;
-	width: 100%;
-	height: 100%;
-	display: block;
 }
 .feedback{
 	float: none;
@@ -659,3 +1598,19 @@ nav.on a:hover{
 }
 }
 
+@media screen and (max-width: 420px){
+.news-preview h3{
+	margin: 20px 0px 10px 0px;
+	text-align: center;
+	font-size: 16px;
+}
+.news-preview p{
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 12px;
+	margin-bottom: 10px;
+	padding: 5px 30px;
+}
+.read-more{
+	text-align: center;
+}
+}
